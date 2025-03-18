@@ -583,26 +583,6 @@ class GLite(nn.Module):
         self.batch_size = params["batch_size"]
         self.device = params["device"]
         
-        self.SB_ES = nn.ModuleList()
-        self.SB_ET = nn.ModuleList()
-        self.SB_EK = nn.ModuleList()
-        self.SB_EV = nn.ModuleList()
-        
-        self.SB_WS1 = nn.ModuleList()
-        self.SB_WT1 = nn.ModuleList()
-        self.SB_WK = nn.ModuleList()
-        self.SB_WV = nn.ModuleList()
-        
-        self.SB_WS2 = nn.ModuleList()
-        self.SB_WT2 = nn.ModuleList()
-        self.SB_WSX = nn.ModuleList()
-        self.SB_WTX = nn.ModuleList()
-        
-        self.SB_ST = nn.ModuleList()
-        
-        self.SB_WOsx = nn.ModuleList()
-        self.SB_WOtx = nn.ModuleList()
-        
         self.U1 = SubmLayer(self.num_sub_band)
         self.U2 = SubmLayer(self.num_sub_band)
         self.U3 = SubmLayer(self.num_sub_band)
